@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8"/>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    html,body{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+    
+    .redondo{
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px #FFFFFF;
+
+    }
+
+    .linkfoot:link, .linkfoot:visited, .linkfoot:hover, .linkfoot:active{
+      text-decoration: none;
+      color: white;
+    }    
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body style="background-color:gray">
+  <div class="" style="background-color:#EEEEEE">
+    <div class="panel-heading row" style="background-color:gray">
+      <div class="col-xs-2"><img class="redondo" src="minerva.png" height="50" width="50"></div><div class="col-xs-10">
+                                                                                                <div><h3 class="panel-title"><strong style="text-shadow: -2px 2px 8px #FFFFFF; ">FIA-UES</strong></h3></div>
+                                                                                                <div><h6 style="color: white">Links de interés para todo estudiante de la FIA</h6></div>
+                                                                                                </div>
+    </div>
+  <div class="panel-body">
+     <div class="list-group">
+    <a href="http://aula.fia.ues.edu.sv/login/index.php" target="_blank" class="list-group-item">  <span class="icon-uniE600" style="font-size: 25px;" ></span><span style="position: absolute; top: 15px;"> &nbsp; Aula Virtual</span></a>
+    <a href="https://expediente3.ues.edu.sv/xol/?facultad=ingenieria" target="_blank" class="list-group-item"><span class="icon-profile" style="font-size: 25px;" ></span><span style="position: absolute; top: 15px;"> &nbsp; Expediente Académico</span></a>
+    <a href="http://www.fia.ues.edu.sv/web/academica%20/inicio" target="_blank" class="list-group-item"><span class="icon-cabinet" style="font-size: 25px;" ></span><span style="position: absolute; top: 15px;"> &nbsp; Académica FIA</span></a>
+  
+  
+  </div>
+  </div>
+   <!--<div class="panel-footer" style="background-color:#F2DEDE; padding: 0; margin: 0;">Sponsored by Geekoders ;)</div> -->
+</div>
+ <footer class="row" style="padding: 10px">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-2">
+          <a href="http://www.geekoders.com" target="_blank">
+             <div style="display: inline-block; margin-right: 10px;">
+                <img src="logo.png" height="40" width="40"/>
+             </div>
+          </a>
+      </div>
+      <div class="col-xs-6 " style="color: white; text-align: center;"><a class="linkfoot" href="http://www.geekoders.com" target="_blank">Powered </br>by Geekcoders &copy; </a></div>
+      <div class="col-xs-2" >
+        <a href="https://www.facebook.com/pages/Geekoders/569942359795229?fref=ts" target="_blank"><img src="like.png" height="40" width="40"/>
+        </a>
+      </div>
+      <div class="col-xs-1"></div>
+  </footer> 
+  </body>
+</html>
+
+<!-- cosas inutiles 
+
+<div style="border-radius: 100%; box-shadow: 0 0 60px #FFF; height:30px; width:30px; position: absolute; bottom: -15px; left: 15px;"></div>
+
+-->
